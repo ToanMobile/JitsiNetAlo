@@ -97,7 +97,7 @@ var config = {
     // Enabling this will run the lib-jitsi-meet no audio detection module which
     // will notify the user if the current selected microphone has no audio
     // input and will suggest another valid device if one is present.
-    enableNoAudioDetection: true,
+    enableNoAudioDetection: false,
 
     // Enabling this will show a "Save Logs" link in the GSM popover that can be
     // used to collect debug information (XMPP IQs, SDP offer/answer cycles)
@@ -106,13 +106,13 @@ var config = {
 
     // Enabling this will hide the "Show More" link in the GSM popover that can be
     // used to display more statistics about the connection (IP, Port, protocol, etc).
-    // disableShowMoreStats: true,
+    disableShowMoreStats: false,
 
     // Enabling this will run the lib-jitsi-meet noise detection module which will
     // notify the user if there is noise, other than voice, coming from the current
     // selected microphone. The purpose it to let the user know that the input could
     // be potentially unpleasant for other meeting participants.
-    enableNoisyMicDetection: true,
+    enableNoisyMicDetection: false,
 
     // Start the conference in audio only mode (no video is being received nor
     // sent).
@@ -123,7 +123,7 @@ var config = {
 
     // Start calls with audio muted. Unlike the option above, this one is only
     // applied locally. FIXME: having these 2 options is confusing.
-    // startWithAudioMuted: false,
+    startWithAudioMuted: false,
 
     // Enabling it (with #params) will disable local audio output of remote
     // participants and to enable it back a reload is needed.
